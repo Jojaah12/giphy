@@ -1,0 +1,25 @@
+{
+  "name": "giphy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "random-dog-names": "dog-names --type female",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jojaah12/giphy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jojaah12/giphy/issues"
+  },
+  "homepage": "https://github.com/Jojaah12/giphy#readme",
+  "dependencies": {
+    "dog-names": "^2.0.0",
+    "superb": "^4.0.0",
+    "superheroes": "^3.0.0"
+  }
+}
