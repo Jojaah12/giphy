@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rollup --config",
     "random-dog-names": "dog-names --type female",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +20,9 @@
   "homepage": "https://github.com/Jojaah12/giphy#readme",
   "dependencies": {
     "dog-names": "^2.0.0",
+    "rollup": "^2.42.1",
     "superb": "^4.0.0",
-    "superheroes": "^3.0.0"
+    "superheroes": "^3.0.0",
+    "supervillains": "^3.0.0"
   }
 }
