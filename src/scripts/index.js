@@ -1,1 +1,1 @@
-console.log('hello Rollup');
+console.log('amin är en duktig lärare');
