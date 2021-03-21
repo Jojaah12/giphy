@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rollup --config",
+    "build": "rollup --config --environment NODE_ENV:production",
+    "start": "rollup --config --watch",
     "random-dog-names": "dog-names --type female",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +25,8 @@
     "superb": "^4.0.0",
     "superheroes": "^3.0.0",
     "supervillains": "^3.0.0"
+  },
+  "devDependencies": {
+    "rollup-plugin-browsersync": "^1.3.1"
   }
 }
