@@ -1,1 +1,1 @@
-console.log('amin är en duktig lärare');
+import '../styles/index.scss';
