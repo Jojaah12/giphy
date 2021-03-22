@@ -2,6 +2,7 @@ import postcss from 'rollup-plugin-postcss';
 import browsersync from 'rollup-plugin-browsersync';
 import postcssNormalize from 'postcss-normalize';
 import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
 const isProduction = process.env.NODE_ENV === 'production';
 const isDevelopment = isProduction === false;
 
@@ -18,9 +19,8 @@ export default {
         }),
         postcss({
             sourceMap: isDevelopment,
-            plugins: [postcssNormalize(), autoprefixer()],
+            plugins: [postcssNormalize(), autoprefixer(), cssnano()],
             extract: true
         })
     ]
-
 };
