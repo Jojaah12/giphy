@@ -3,6 +3,14 @@ import browsersync from 'rollup-plugin-browsersync';
 import postcssNormalize from 'postcss-normalize';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
+import resolve from 'rollup-plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
+import {
+    terser
+} from "rollup-plugin-terser";
+import {
+    babel
+} from '@rollup/plugin-babel';
 const isProduction = process.env.NODE_ENV === 'production';
 const isDevelopment = isProduction === false;
 
@@ -14,6 +22,12 @@ export default {
     },
 
     plugins: [
+        resolve(),
+        !isDevelopment && terser(),
+        commonjs(),
+        babel({
+            babelHelpers: 'bundled'
+        }),
         isDevelopment && browsersync({
             server: 'public'
         }),
