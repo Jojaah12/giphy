@@ -29,6 +29,7 @@
     "postcss-cli": "^8.3.1",
     "postcss-normalize": "^9.0.0",
     "rollup": "^2.42.1",
+    "rollup-plugin-inject-env": "^0.1.0",
     "rollup-plugin-postcss": "^4.0.0",
     "superb": "^4.0.0",
     "superheroes": "^3.0.0",

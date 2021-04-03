@@ -5,6 +5,7 @@ import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import injectEnv from 'rollup-plugin-inject-env';
 import {
     terser
 } from "rollup-plugin-terser";
@@ -23,6 +24,7 @@ export default {
 
     plugins: [
         resolve(),
+        injectEnv(),
         !isDevelopment && terser(),
         commonjs(),
         babel({
